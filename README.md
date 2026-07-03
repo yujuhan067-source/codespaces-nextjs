@@ -11,3 +11,5 @@ To run this application:
 ```
 npm run dev
 ```
+
+Deployed on Vercel with automatic deployments on every push to `main`.
