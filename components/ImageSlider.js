@@ -5,22 +5,22 @@ const SLIDES = [
   {
     src: 'https://picsum.photos/id/1015/1200/600',
     alt: '강과 산이 있는 풍경',
-    caption: '자연에서 영감을 얻다',
+    caption: '매일 30분, 자연 속을 걸어보세요',
   },
   {
     src: 'https://picsum.photos/id/1041/1200/600',
     alt: '숲 속의 오두막',
-    caption: '조용한 순간을 소중히',
+    caption: '충분한 휴식이 건강의 시작입니다',
   },
   {
     src: 'https://picsum.photos/id/1043/1200/600',
     alt: '들판의 나뭇잎',
-    caption: '디테일에 집중하다',
+    caption: '제철 재료로 균형 잡힌 식탁을',
   },
   {
     src: 'https://picsum.photos/id/1050/1200/600',
-    alt: '해질녘 도시 풍경',
-    caption: '새로운 하루를 시작하다',
+    alt: '해질녘 풍경',
+    caption: '규칙적인 하루가 건강을 만듭니다',
   },
 ]
 

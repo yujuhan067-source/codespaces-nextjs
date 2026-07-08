@@ -7,21 +7,23 @@ export default function Hero() {
       <div className={styles.shape1} />
       <div className={styles.shape2} />
       <div className={styles.content}>
-        <span className={`${styles.badge} ${styles.fadeIn}`}>새로운 시작</span>
+        <span className={`${styles.badge} ${styles.fadeIn}`}>
+          시니어를 위한 건강 정보
+        </span>
         <h1 className={`${styles.title} ${styles.fadeInUp}`}>
-          당신의 아이디어를
+          건강하고 활기찬 노후,
           <br />
-          현실로 만들어보세요
+          작은 습관에서 시작됩니다
         </h1>
         <p className={`${styles.subtitle} ${styles.fadeInUp}`}>
-          애니메이션, 인터랙션, 이미지 슬라이더가 살아있는 홈페이지를
-          경험해보세요.
+          건강 관리, 피부 관리, 균형 잡힌 다이어트까지. 매일 실천할 수 있는
+          생활 속 건강 정보를 전해드립니다.
         </p>
         <div className={`${styles.ctaRow} ${styles.fadeInUp}`}>
-          <Button onClick={() => alert('시작하기를 눌렀습니다!')}>
-            지금 시작하기
+          <Button onClick={() => alert('건강 정보를 확인해 보세요!')}>
+            건강 정보 보기
           </Button>
-          <a href="#features" className={styles.secondaryLink}>
+          <a href="#health" className={styles.secondaryLink}>
             더 알아보기 ↓
           </a>
         </div>

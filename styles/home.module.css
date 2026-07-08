@@ -18,6 +18,16 @@
   z-index: 1;
 }
 
+.disclaimer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 .footer {
   padding: 32px 24px;
   text-align: center;
