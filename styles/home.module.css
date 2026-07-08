@@ -9,3 +9,19 @@
   border-bottom: 1px solid #efefef;
   margin: 3em auto;
 }
+
+.sliderSection {
+  max-width: 960px;
+  margin: -48px auto 0;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  padding: 32px 24px;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #efefef;
+}
