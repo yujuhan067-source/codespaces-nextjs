@@ -45,6 +45,8 @@ function Home() {
         subtitle="나이가 들수록 더 세심한 피부 관리가 필요합니다."
         items={SKIN_ITEMS}
         tint
+        ctaHref="/skin-by-age"
+        ctaLabel="나이대별 피부관리 비법 보기"
       />
 
       <InfoSection
@@ -53,6 +55,8 @@ function Home() {
         title="다이어트 & 영양"
         subtitle="균형 잡힌 식습관은 건강한 노후의 기본입니다."
         items={DIET_ITEMS}
+        ctaHref="/diet-by-age"
+        ctaLabel="나이대별 다이어트&영양 비법 보기"
       />
 
       <p className={styles.disclaimer}>

@@ -3,21 +3,21 @@ import Link from 'next/link'
 import NavBar from '../components/NavBar'
 import InfoSection from '../components/InfoSection'
 import {
-  SIXTIES_ITEMS,
-  SEVENTIES_ITEMS,
-  EIGHTIES_PLUS_ITEMS,
-} from '../data/healthByAge'
+  SIXTIES_DIET_ITEMS,
+  SEVENTIES_DIET_ITEMS,
+  EIGHTIES_PLUS_DIET_ITEMS,
+} from '../data/dietByAge'
 import homeStyles from '../styles/home.module.css'
 import styles from '../styles/byAgePage.module.css'
 
-function HealthByAge() {
+function DietByAge() {
   return (
     <>
       <Head>
-        <title>나이대별 건강관리 비법 | 시니어 건강 라이프</title>
+        <title>나이대별 다이어트&영양 비법 | 시니어 건강 라이프</title>
         <meta
           name="description"
-          content="60대, 70대, 80대 이상 연령대별로 꼭 챙겨야 할 핵심 건강관리 비법"
+          content="60대, 70대, 80대 이상 연령대별로 꼭 챙겨야 할 핵심 식습관과 영양 비법"
         />
       </Head>
 
@@ -27,36 +27,36 @@ function HealthByAge() {
         <Link href="/" className={styles.backLink}>
           ← 홈으로
         </Link>
-        <h1 className={styles.pageTitle}>나이대별 건강관리 비법</h1>
+        <h1 className={styles.pageTitle}>나이대별 다이어트 & 영양 비법</h1>
         <p className={styles.pageSubtitle}>
-          연령대에 따라 신경 써야 할 건강 포인트는 조금씩 달라집니다. 우리
-          나이대에 맞는 핵심 습관부터 시작해보세요.
+          나이가 들수록 필요한 영양소와 식사 방식이 달라집니다. 우리 나이대에
+          맞는 식습관부터 챙겨보세요.
         </p>
       </header>
 
       <InfoSection
         id="sixties"
         eyebrow="60대"
-        title="활기찬 60대를 위한 습관"
-        subtitle="근육량 감소가 시작되는 시기, 예방이 가장 중요합니다."
-        items={SIXTIES_ITEMS}
+        title="근육을 지키는 60대 식습관"
+        subtitle="체중 감량보다 근육량 유지에 초점을 맞출 때입니다."
+        items={SIXTIES_DIET_ITEMS}
       />
 
       <InfoSection
         id="seventies"
         eyebrow="70대"
-        title="든든한 70대를 위한 습관"
-        subtitle="낙상 예방과 만성질환 관리에 더 신경 써야 할 때입니다."
-        items={SEVENTIES_ITEMS}
+        title="편안하게 먹는 70대 식습관"
+        subtitle="소화가 잘 되고 씹기 편한 식사가 중요해집니다."
+        items={SEVENTIES_DIET_ITEMS}
         tint
       />
 
       <InfoSection
         id="eighties-plus"
         eyebrow="80대 이상"
-        title="편안한 80대 이상을 위한 습관"
-        subtitle="가족, 보호자와 함께하는 건강 관리가 더욱 중요해집니다."
-        items={EIGHTIES_PLUS_ITEMS}
+        title="안전하게 챙기는 80대 이상 식습관"
+        subtitle="삼킴과 탈수 예방 등 보호자의 관심이 더욱 필요한 시기입니다."
+        items={EIGHTIES_PLUS_DIET_ITEMS}
       />
 
       <p className={homeStyles.disclaimer}>
@@ -72,4 +72,4 @@ function HealthByAge() {
   )
 }
 
-export default HealthByAge
+export default DietByAge
