@@ -1,6 +1,16 @@
+import Link from 'next/link'
 import styles from './InfoSection.module.css'
 
-export default function InfoSection({ id, eyebrow, title, subtitle, items, tint }) {
+export default function InfoSection({
+  id,
+  eyebrow,
+  title,
+  subtitle,
+  items,
+  tint,
+  ctaHref,
+  ctaLabel,
+}) {
   return (
     <section
       id={id}
@@ -24,6 +34,13 @@ export default function InfoSection({ id, eyebrow, title, subtitle, items, tint 
           </div>
         ))}
       </div>
+      {ctaHref && (
+        <div className={styles.ctaRow}>
+          <Link href={ctaHref} className={styles.ctaLink}>
+            {ctaLabel} →
+          </Link>
+        </div>
+      )}
     </section>
   )
 }

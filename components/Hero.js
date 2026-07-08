@@ -1,7 +1,10 @@
+import { useRouter } from 'next/router'
 import Button from './Button'
 import styles from './Hero.module.css'
 
 export default function Hero() {
+  const router = useRouter()
+
   return (
     <section className={styles.hero}>
       <div className={styles.shape1} />
@@ -20,7 +23,7 @@ export default function Hero() {
           생활 속 건강 정보를 전해드립니다.
         </p>
         <div className={`${styles.ctaRow} ${styles.fadeInUp}`}>
-          <Button onClick={() => alert('건강 정보를 확인해 보세요!')}>
+          <Button onClick={() => router.push('/health-by-age')}>
             건강 정보 보기
           </Button>
           <a href="#health" className={styles.secondaryLink}>

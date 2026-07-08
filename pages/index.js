@@ -34,6 +34,8 @@ function Home() {
         title="건강 관리"
         subtitle="일상 속 작은 습관이 건강한 노후를 만듭니다."
         items={HEALTH_ITEMS}
+        ctaHref="/health-by-age"
+        ctaLabel="나이대별 건강관리 비법 보기"
       />
 
       <InfoSection

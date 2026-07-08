@@ -74,6 +74,22 @@
   line-height: 1.6;
 }
 
+.ctaRow {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.ctaLink {
+  color: #0076ff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.ctaLink:hover {
+  opacity: 0.7;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
